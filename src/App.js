@@ -42,9 +42,14 @@ const ImageUploadComponent = () => {
   return (
     <div>
       <h1>Image To Text Extractor</h1>
+      <div className="input">
+
       <input type="file" accept="image/*" onChange={handleImageUpload} />
+      </div>
+      <section className="flex">
+
       {imagePath && (
-        <div>
+        <div className="image">
           <p>Uploaded Image:</p>
           <img
             src={imagePath}
@@ -54,11 +59,12 @@ const ImageUploadComponent = () => {
         </div>
       )}
       {extractedText && (
-        <div>
+        <div className="text">
           <p>Extracted Text:</p>
           <pre>{extractedText}</pre>
         </div>
       )}
+      </section>
     </div>
   );
 };

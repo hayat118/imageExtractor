@@ -11,12 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+h1{
+  margin-bottom: 20px;
+  text-align: center;
+}
+.input {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
 .flex {
   display: flex;
   border: 1px solid black;
 }
-.imagediv {
-  border: 1px solid black;
-  height: 150px;
-  width: 400px;
+.image{
+  width: 40%;
+  /* border: 1px solid black; */
+}
+.text{
+  margin-left: 50px;
+  width: 50%;
+  /* border: 1 px solid black; */
+  overflow:scroll;
 }
